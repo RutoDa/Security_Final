@@ -51,12 +51,12 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                     }
                     echo '
                     <script>
-                        function trackSearch(query) {
-                            document.write("<h3>搜尋 "+query+" 的結果...</h3>");
+                        function printSearch(search) {
+                            document.write("<h3>搜尋 "+search+" 的結果...</h3>");
                         }
-                        var query = (new URLSearchParams(window.location.search)).get("search");
-                        if(query) {
-                            trackSearch(query);
+                        var search = (new URLSearchParams(window.location.search)).get("search");
+                        if(search) {
+                            printSearch(search);
                         }
                     </script>
                     ';
