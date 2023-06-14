@@ -48,7 +48,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                             <option value="2">嘉義</option>
                             <option value="3">高雄</option>
                         </select>
-                        <button type="submit" class="button">Check stock</button>
+                        <button type="submit" class="button">查看庫存</button>
                     </form>
                     <span style="margin-left:7%" id="stockCheckResult"></span>
                     <script src="js/check_stock_xml.js"></script>
